@@ -1,0 +1,233 @@
+
+
+body {
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-image: url("img/fondo3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*  CAPAS CONTENEDORAS  */
+
+#izquierda  {
+  width: 300px;
+  float: left;
+  }
+  
+.derecha {
+  width: 750px;
+  float: left;
+  }
+  
+
+
+/*  ELEMENTOS DEL MENU LATERAL  */
+
+#menu {
+  padding:0; 
+  margin:0 auto; 
+  list-style-type:none; 
+  width:160px; 
+  height:312px; 
+  }
+#menu li a {
+  height:50px;
+  width:267px; 
+  float:left; 
+  border-bottom:2px solid #fff; 
+  overflow: hidden;
+  }
+#menu li a img {
+  border:0;
+  }
+#menu li a:hover {
+	opacity: 0.5;
+  }
+
+
+  
+
+  
+  
+  /*--------------------------side-footer------------------------------*/
+
+.sidebar-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+}
+
+.sidebar-footer > a {
+  flex-grow: 1;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+
+.sidebar-footer > a .notification {
+  position: absolute;
+  top: 0;
+}
+
+.badge-sonar {
+  display: inline-block;
+  background: #980303;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  top: 0;
+}
+
+.badge-sonar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #980303;
+  opacity: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: sonar 1.5s infinite;
+}
+
+/*--------------------------page-content-----------------------------*/
+
+.page-wrapper .page-content {
+  display: inline-block;
+  width: 100%;
+  padding-left: 0px;
+  padding-top: 20px;
+}
+
+.page-wrapper .page-content > div {
+  padding: 20px 40px;
+  
+}
+
+.page-wrapper .page-content {
+  overflow-x: hidden;
+}
+
+/*------scroll bar---------------------*/
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #525965;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+h1, .h1 {
+	font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h2, .h2 {
+	font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+	font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.barra1 {
+    height: 10%;
+    background-image: url("../images/btn1.jpg");
+	margin-top: 0px;
+	/* margin-left: 320; */
+	padding: 15;
+	height: 50px;
+	color:#ffffff;
+    
+}
+
+
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+
+
+/* .container {
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* background: #ffffff;
+    border-radius: 10px; */
+    padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+    #container{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    #container{
+        width: 60%;
+    }
+}
+
+
+
+
